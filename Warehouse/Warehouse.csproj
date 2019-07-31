@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F700A086-A9E5-496B-8E49-5FBBB0E460F2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SinticBolivia.Warehouse</RootNamespace>
+    <AssemblyName>Warehouse</AssemblyName>
+    <ReleaseVersion>1.0</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="tables\SMTableProduct.cs" />
+    <Compile Include="tables\SMTableTransactions.cs" />
+    <Compile Include="tables\SMTableTransactionAttributes.cs" />
+    <Compile Include="tables\SMTableSaleDetails.cs" />
+    <Compile Include="tables\SMTableIngresos.cs" />
+    <Compile Include="tables\SMTableSuppliers.cs" />
+    <Compile Include="tables\SMTableCategories.cs" />
+    <Compile Include="tables\SMTableWarehouseOrders.cs" />
+    <Compile Include="SBWarehouse.cs" />
+    <Compile Include="SBCashRegister.cs" />
+    <Compile Include="SBPOS.cs" />
+    <Compile Include="SBProduct.cs" />
+    <Compile Include="SBProductCategory.cs" />
+    <Compile Include="SBSale.cs" />
+    <Compile Include="SBSupplier.cs" />
+    <Compile Include="SBTransaction.cs" />
+    <Compile Include="tables\SBTableTransactionType.cs" />
+    <Compile Include="tables\SBTableStores.cs" />
+    <Compile Include="tables\SBTableProductLines.cs" />
+    <Compile Include="SBTransactionType.cs" />
+    <Compile Include="classes\Ean13.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="sql\" />
+    <Folder Include="tables\" />
+    <Folder Include="classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sql\warehouse_db.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\SinticBolivia\SinticBolivia.csproj">
+      <Project>{F0DBC289-DC96-4E09-8A8C-76FC2612EB46}</Project>
+      <Name>SinticBolivia</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
