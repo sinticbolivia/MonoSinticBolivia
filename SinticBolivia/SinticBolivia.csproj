@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F0DBC289-DC96-4E09-8A8C-76FC2612EB46}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SinticBolivia</RootNamespace>
+    <AssemblyName>SinticBolivia</AssemblyName>
+    <ReleaseVersion>1.0</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\libs\mysql.data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="Mono.Data.Sqlite" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="Nini">
+      <HintPath>..\..\libs\Nini.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="SBApplication.cs" />
+    <Compile Include="SBFactory.cs" />
+    <Compile Include="Web\SBRequest.cs" />
+    <Compile Include="Web\SBRoute.cs" />
+    <Compile Include="Web\SBSession.cs" />
+    <Compile Include="Web\SBWebApplication.cs" />
+    <Compile Include="Web\SBWebUtils.cs" />
+    <Compile Include="Database\MySQL.cs" />
+    <Compile Include="Database\SQLite.cs" />
+    <Compile Include="Database\SqlServer.cs" />
+    <Compile Include="Database\tables\table.branches.cs" />
+    <Compile Include="Database\tables\table.person.cs" />
+    <Compile Include="Database\tables\table.rol.cs" />
+    <Compile Include="Database\tables\table.terminals.cs" />
+    <Compile Include="Database\tables\table.users.cs" />
+    <Compile Include="Database\SBDatabase.cs" />
+    <Compile Include="Database\SBDBException.cs" />
+    <Compile Include="Database\SBTable.cs" />
+    <Compile Include="SBObject.cs" />
+    <Compile Include="SBIApplication.cs" />
+    <Compile Include="SBGlobals.cs" />
+    <Compile Include="SBUsuario.cs" />
+    <Compile Include="SBPersona.cs" />
+    <Compile Include="SBUtils.cs" />
+    <Compile Include="SBIModule.cs" />
+    <Compile Include="SBModule.cs" />
+    <Compile Include="SBUser.cs" />
+    <Compile Include="SBCrypt.cs" />
+    <Compile Include="SBPerson.cs" />
+    <Compile Include="SBConfig.cs" />
+    <Compile Include="Database\tables\table.parameter.cs" />
+    <Compile Include="SBDBObject.cs" />
+    <Compile Include="Database\tables\table.attachments.cs" />
+    <Compile Include="SBMeta.cs" />
+    <Compile Include="SBPermission.cs" />
+    <Compile Include="SBRole.cs" />
+    <Compile Include="SBLiteral.cs" />
+    <Compile Include="Database\Entity.cs" />
+    <Compile Include="Database\EntityAttribute.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
