@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+    <target-gtk-version>2.12</target-gtk-version>
+  </configuration>
+  <import>
+    <widget-library name="../bin/Release/GtkApplication.dll" internal="true" />
+  </import>
+  <widget class="Gtk.Bin" id="SinticBolivia.SBDatePicker" design-size="198 29">
+    <property name="MemberName" />
+    <property name="WidthRequest">198</property>
+    <property name="Visible">False</property>
+    <child>
+      <widget class="Gtk.Fixed" id="fixed1">
+        <property name="MemberName" />
+        <property name="WidthRequest">0</property>
+        <property name="HeightRequest">29</property>
+        <property name="HasWindow">False</property>
+        <child>
+          <widget class="Gtk.Entry" id="entryDate">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="IsEditable">True</property>
+            <property name="InvisibleChar">●</property>
+          </widget>
+          <packing>
+            <property name="X">3</property>
+            <property name="Y">3</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="buttonShowCalendar">
+            <property name="MemberName" />
+            <property name="CanFocus">True</property>
+            <property name="Type">TextAndIcon</property>
+            <property name="Icon">resource:SinticBolivia.datebox_arrow.png</property>
+            <property name="Label" translatable="yes" />
+            <property name="UseUnderline">True</property>
+            <property name="Relief">None</property>
+          </widget>
+          <packing>
+            <property name="X">163</property>
+            <property name="Y">1</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>
