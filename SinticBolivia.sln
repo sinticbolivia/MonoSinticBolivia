@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SinticBolivia", "SinticBolivia\SinticBolivia.csproj", "{F0DBC289-DC96-4E09-8A8C-76FC2612EB46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GtkApplication", "GtkApplication\GtkApplication.csproj", "{42D32704-259D-4BBF-8EB1-D2CD2E469231}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warehouse", "Warehouse\Warehouse.csproj", "{F700A086-A9E5-496B-8E49-5FBBB0E460F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "License", "License\License.csproj", "{714FE895-F003-4413-BCF2-3F57F37CB31E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Default|Any CPU = Default|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42D32704-259D-4BBF-8EB1-D2CD2E469231}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42D32704-259D-4BBF-8EB1-D2CD2E469231}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42D32704-259D-4BBF-8EB1-D2CD2E469231}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{42D32704-259D-4BBF-8EB1-D2CD2E469231}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{42D32704-259D-4BBF-8EB1-D2CD2E469231}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42D32704-259D-4BBF-8EB1-D2CD2E469231}.Release|Any CPU.Build.0 = Release|Any CPU
+		{714FE895-F003-4413-BCF2-3F57F37CB31E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{714FE895-F003-4413-BCF2-3F57F37CB31E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{714FE895-F003-4413-BCF2-3F57F37CB31E}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{714FE895-F003-4413-BCF2-3F57F37CB31E}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{714FE895-F003-4413-BCF2-3F57F37CB31E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{714FE895-F003-4413-BCF2-3F57F37CB31E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0DBC289-DC96-4E09-8A8C-76FC2612EB46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0DBC289-DC96-4E09-8A8C-76FC2612EB46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0DBC289-DC96-4E09-8A8C-76FC2612EB46}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0DBC289-DC96-4E09-8A8C-76FC2612EB46}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{F0DBC289-DC96-4E09-8A8C-76FC2612EB46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0DBC289-DC96-4E09-8A8C-76FC2612EB46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F700A086-A9E5-496B-8E49-5FBBB0E460F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F700A086-A9E5-496B-8E49-5FBBB0E460F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F700A086-A9E5-496B-8E49-5FBBB0E460F2}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{F700A086-A9E5-496B-8E49-5FBBB0E460F2}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{F700A086-A9E5-496B-8E49-5FBBB0E460F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F700A086-A9E5-496B-8E49-5FBBB0E460F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		version = 1.0
+		StartupItem = SinticBolivia\SinticBolivia.csproj
+	EndGlobalSection
+EndGlobal
